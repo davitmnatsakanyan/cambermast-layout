@@ -1,0 +1,72 @@
+$logoColor: blue;
+$navColor: purple;
+$mainColor: green;
+$sideColor: orange;
+$footerColor: red;
+$debug: true;
+
+$navBarBackground: rgb(58,59,61);
+$navBarHover: #ddd;
+$navBarSelected: rgb(71,72,74);
+$navBarDefaultText: #a9a9a9;
+
+.container {
+    max-width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-areas:    "logo   logo"
+                            "nav    nav"
+                            "main   side"
+                            "footer footer";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto 50px auto auto;
+}
+
+.logo-area
+{
+    grid-area: logo;
+    .logo {display: block;} //removes gap at bottom of logo
+
+    @if $debug { background-color: $logoColor; }
+}
+
+.nav-area {
+    // Primary navigation bar
+    grid-area: nav;
+    overflow: hidden;
+    background-color: $navBarBackground;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    a {
+        color: $navBarDefaultText;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 16px;
+        
+        active {
+            background-color: $navBarSelected;
+        }
+    }
+    a:hover {
+        background-color:$navBarHover;
+        color: nav;
+    }
+    @if $debug {background-color: red;}
+}
+
+.main-area {
+    grid-area: main;
+    @if $debug { background-color: $mainColor; }
+}
+
+.side-area {
+    grid-area: side;
+    @if $debug { background-color: $sideColor; }
+}
+
+.footer-area {
+    grid-area: footer;
+    @if $debug { background-color: $footerColor; }
+}
