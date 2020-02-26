@@ -3,7 +3,7 @@
 // Assumes default to a mobile view
 .container {
     margin: auto;
-    max-width: 350px;
+    min-width: 350px;
     display: grid;
         grid-template-areas:
         "logo"
