@@ -23,6 +23,8 @@
         40px 50px auto;
 } // end default container
 
+
+// Grid any size larger than the mobile version.
 @include for-size(full-size) {
 .container {
     margin: auto;

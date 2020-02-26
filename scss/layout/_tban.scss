@@ -4,4 +4,12 @@
 .top-banner-area
 {
     grid-area: tban;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.banner-image {
+    max-width: 100%;
+    height: auto;
 }
