@@ -1,0 +1,7 @@
+// Layout for the right border.
+
+.right-area {
+    grid-area: right;
+
+    @if $debug { background-color: $debugRightArea; }
+}

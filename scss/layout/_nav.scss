@@ -1,0 +1,22 @@
+// Layout for the navigation bar.
+
+.nav-area {
+    grid-area: nav;
+    display: grid;
+    align-content: center;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    font-size: 16px;
+    justify-content: start;
+    
+    @include for-size(full-size)
+    {
+        justify-content: end;
+    }
+
+    .nav-item {
+        color: $navDefaultText;
+    }
+
+    @if $debug { background-color: $debugNavArea; }
+}

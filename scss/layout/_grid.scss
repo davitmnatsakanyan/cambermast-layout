@@ -1,0 +1,44 @@
+// Layouts for the grids (mobile and large screen)
+
+// Assumes default to a mobile view
+.container {
+    margin: auto;
+    display: grid;
+        grid-template-areas:
+        "logo"
+        "nav";
+        // "tban   tban   tban   tban   tban   tban"
+        // "left   title  title  title  title  right"
+        // "left   svcs   svcs   svcs   svcs   right"
+        // "pod    pod    pod    pod    pod    pod"
+        // "left   dl     dl     dl     dl     right"
+        // "left   sub    sub    sub    sub    right"
+        // "signup signup signup signup signup signup"
+        // "left   footer footer footer footer right";
+    grid-template-columns:
+        1fr;
+    grid-template-rows: 
+        40px 30px;
+} // end default container
+
+@include for-size(full-size) {
+.container {
+    margin: auto;
+    display: grid;
+    
+        grid-template-areas:
+        "left logo nav nav nav right";
+        // "tban   tban   tban   tban   tban   tban"
+        // "left   title  title  title  title  right"
+        // "left   svcs   svcs   svcs   svcs   right"
+        // "pod    pod    pod    pod    pod    pod"
+        // "left   dl     dl     dl     dl     right"
+        // "left   sub    sub    sub    sub    right"
+        // "signup signup signup signup signup signup"
+        // "left   footer footer footer footer right";
+    grid-template-columns: 25px auto auto auto auto 25px;
+    grid-template-rows: 50px;
+    } // end full-size container
+}
+
+

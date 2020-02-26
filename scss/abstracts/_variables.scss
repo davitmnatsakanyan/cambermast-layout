@@ -1,0 +1,23 @@
+// Site variables
+
+// Use debug:true to add background colors to the grid.
+// Useful for debugging the grid layout.
+$debugLeftArea: lightgrey;
+$debugLogoArea: lightblue;
+$debugNavArea: darkblue;
+$debugTopBannerArea: orange;
+$debugTitleArea: cyan;
+$debugServicesArea: green;
+$debugPodcastArea: purple;
+$debugDownloadArea: red;
+$debugSubtitleArea: brown;
+$debugSignupArea: cadetBlue;
+$debugFooterArea: darkslategrey;
+$debugRightArea: lightgrey;
+$debug: true;
+
+// Navigation area.
+$navBackground: rgb(58,59,61);
+$navHover: #ddd;
+$navSelected: rgb(71,72,74);
+$navDefaultText: #a9a9a9;
