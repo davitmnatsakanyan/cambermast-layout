@@ -9,8 +9,8 @@ body {
       grid-template-areas: "logo" "nav";
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 40px 30px;
-      grid-template-rows: 40px 30px;
+  -ms-grid-rows: 40px 35px;
+      grid-template-rows: 40px 35px;
 }
 
 @media (min-width: 768px) {
@@ -21,19 +21,17 @@ body {
         grid-template-areas: "left logo nav nav nav right";
     -ms-grid-columns: 25px auto auto auto auto 25px;
         grid-template-columns: 25px auto auto auto auto 25px;
-    -ms-grid-rows: 50px;
-        grid-template-rows: 50px;
+    -ms-grid-rows: 35px;
+        grid-template-rows: 35px;
   }
 }
 
 .left-area {
   grid-area: left;
-  background-color: lightgrey;
 }
 
 .right-area {
   grid-area: right;
-  background-color: lightgrey;
 }
 
 .logo-area {
@@ -47,7 +45,6 @@ body {
           justify-content: start;
   -ms-flex-line-pack: center;
       align-content: center;
-  background-color: lightblue;
 }
 
 .logo-area .logo {
@@ -67,15 +64,16 @@ body {
   grid-area: nav;
   display: -ms-grid;
   display: grid;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
   grid-auto-flow: column;
-  grid-gap: 20px;
-  font-size: 16px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  background-color: darkblue;
+  gap: 20px;
+  grid-auto-rows: auto;
+  background-color: wite;
+  white-space: nowrap;
 }
 
 @media (min-width: 768px) {
@@ -87,6 +85,25 @@ body {
 }
 
 .nav-area .nav-item {
-  color: #a9a9a9;
+  font-size: 12px;
+  color: #2A2929;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .nav-area .nav-item {
+    font-size: 16px;
+  }
+}
+
+.nav-area .nav-item:hover {
+  color: #035B96;
+  border-top: 1px solid #035B96;
+}
+
+.nav-area .nav-item:active {
+  color: #035B96;
+  border-top: 3px solid #035B96;
 }
 /*# sourceMappingURL=main.css.map */

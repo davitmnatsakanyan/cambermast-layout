@@ -18,7 +18,7 @@
     grid-template-columns:
         1fr;
     grid-template-rows: 
-        40px 30px;
+        40px 35px;
 } // end default container
 
 @include for-size(full-size) {
@@ -37,7 +37,7 @@
         // "signup signup signup signup signup signup"
         // "left   footer footer footer footer right";
     grid-template-columns: 25px auto auto auto auto 25px;
-    grid-template-rows: 50px;
+    grid-template-rows: 35px;
     } // end full-size container
 }
 

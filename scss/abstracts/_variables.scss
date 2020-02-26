@@ -14,10 +14,16 @@ $debugSubtitleArea: brown;
 $debugSignupArea: cadetBlue;
 $debugFooterArea: darkslategrey;
 $debugRightArea: lightgrey;
-$debug: true;
+$debug: false;
 
 // Navigation area.
-$navBackground: rgb(58,59,61);
-$navHover: #ddd;
-$navSelected: rgb(71,72,74);
-$navDefaultText: #a9a9a9;
+$navBackground: wite;
+$navDefaultColor: #2A2929;
+$navHoverColor: #035B96;
+$navHoverBorderColor: #035B96;
+$navHoverBorderSize: 1px;
+
+$navSelectedBorderColor: #035B96;
+$navSelectedBorderSize: 3px;
+$navSelectedColor: #035B96;
+

@@ -4,7 +4,7 @@
 @mixin for-size($size) {
     @if $size == full-size {
       @media (min-width: 768px) { @content; } // all content displays like a phone up to 767 pixels.
-    } 
+    }
   }
 
 //   Reference: https://medium.com/@timothyrobards/structuring-your-sass-projects-c8d41fa55ed4

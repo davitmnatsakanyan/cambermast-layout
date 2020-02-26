@@ -1,22 +1,50 @@
 // Layout for the navigation bar.
 
+// layout
 .nav-area {
     grid-area: nav;
     display: grid;
-    align-content: center;
+    align-content: flex-end;
     grid-auto-flow: column;
-    grid-gap: 20px;
-    font-size: 16px;
     justify-content: start;
+    gap: 20px;
+    grid-auto-rows: auto;
+    background-color: $navBackground;
+    white-space: nowrap; // don't wrap any multi-word menu items.
     
     @include for-size(full-size)
     {
         justify-content: end;
     }
-
-    .nav-item {
-        color: $navDefaultText;
-    }
-
+    
     @if $debug { background-color: $debugNavArea; }
+}
+
+// font
+.nav-area .nav-item {
+        font-size: 12px;
+        color: $navDefaultColor;
+        text-decoration: none;
+        text-transform: uppercase;
+        @include for-size(full-size)
+        {
+            font-size: 16px;
+        }
+}
+
+// hover
+.nav-area .nav-item {
+
+    &:hover{
+        color: $navHoverColor;
+        border-top: $navHoverBorderSize solid $navHoverBorderColor;
+    }
+}
+
+// selected
+.nav-area .nav-item {
+    &:active{
+        color: $navSelectedColor;
+        border-top: $navSelectedBorderSize solid $navSelectedBorderColor;
+    }
 }
