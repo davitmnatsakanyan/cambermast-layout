@@ -1,72 +1,113 @@
-$logoColor: blue;
-$navColor: purple;
-$mainColor: green;
-$sideColor: orange;
-$footerColor: red;
+$debugLeftArea: lightgrey;
+$debugLogoArea: lightblue;
+$debugNavArea: darkblue;
+$debugTopBannerArea: orange;
+$debugTitleArea: cyan;
+$debugServicesArea: green;
+$debugPodcastArea: purple;
+$debugDownloadArea: red;
+$debugSubtitleArea: brown;
+$debugSignupArea: cadetBlue;
+$debugFooterArea: darkslategrey;
+$debugRightArea: lightgrey;
 $debug: true;
 
-$navBarBackground: rgb(58,59,61);
-$navBarHover: #ddd;
-$navBarSelected: rgb(71,72,74);
-$navBarDefaultText: #a9a9a9;
+$navBackground: rgb(58,59,61);
+$navHover: #ddd;
+$navSelected: rgb(71,72,74);
+$navDefaultText: #a9a9a9;
 
-.container {
-    max-width: 80%;
-    margin: auto;
-    display: grid;
-    grid-template-areas:    "logo   logo"
-                            "nav    nav"
-                            "main   side"
-                            "footer footer";
-    grid-template-columns: auto auto;
-    grid-template-rows: auto 50px auto auto;
+// TBD: mobile layout
+// .container {
+// }
+body {
+	font-family: Arial, Helvetica, sans-serif;
 }
 
-.logo-area
-{
-    grid-area: logo;
-    .logo {display: block;} //removes gap at bottom of logo
+// always default to the mobile view
+.container {
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+        "logo"
+        "nav";
+        // "tban   tban   tban   tban   tban   tban"
+        // "left   title  title  title  title  right"
+        // "left   svcs   svcs   svcs   svcs   right"
+        // "pod    pod    pod    pod    pod    pod"
+        // "left   dl     dl     dl     dl     right"
+        // "left   sub    sub    sub    sub    right"
+        // "signup signup signup signup signup signup"
+        // "left   footer footer footer footer right";
+    grid-template-columns:
+        1fr;
+    grid-template-rows: 
+        50px 50px;
 
-    @if $debug { background-color: $logoColor; }
+    .nav-area {
+        justify-content: start;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 1400px;
+        margin: auto;
+        display: grid;
+        grid-template-areas:
+            "left   logo    nav    nav    nav    right";
+            // "tban   tban   tban   tban   tban   tban"
+            // "left   title  title  title  title  right"
+            // "left   svcs   svcs   svcs   svcs   right"
+            // "pod    pod    pod    pod    pod    pod"
+            // "left   dl     dl     dl     dl     right"
+            // "left   sub    sub    sub    sub    right"
+            // "signup signup signup signup signup signup"
+            // "left   footer footer footer footer right";
+        grid-template-columns:
+            50px auto auto auto auto 50px;
+        grid-template-rows: 
+            50px;
+    }
+}
+
+.left-area {
+    grid-area: left;
+
+    @if $debug { background-color: $debugLeftArea; }
+}
+
+.right-area {
+    grid-area: right;
+
+    @if $debug { background-color: $debugRightArea; }
+}
+
+.logo-area {
+    grid-area: logo;
+    display: grid;
+    justify-content: start;
+    align-content: center;
+
+    .logo{
+        width: 100%;
+        height: auto;
+    }
+    
+    @if $debug { background-color: $debugLogoArea; }
 }
 
 .nav-area {
-    // Primary navigation bar
     grid-area: nav;
-    overflow: hidden;
-    background-color: $navBarBackground;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-
-    a {
-        color: $navBarDefaultText;
-        padding: 12px;
-        text-decoration: none;
-        font-size: 16px;
-        
-        active {
-            background-color: $navBarSelected;
-        }
+    display: grid;
+    justify-content: end;
+    align-content: center;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    font-size: 16px;
+    .nav-item {
+        color: $navDefaultText;
     }
-    a:hover {
-        background-color:$navBarHover;
-        color: nav;
-    }
-    @if $debug {background-color: red;}
-}
 
-.main-area {
-    grid-area: main;
-    @if $debug { background-color: $mainColor; }
-}
-
-.side-area {
-    grid-area: side;
-    @if $debug { background-color: $sideColor; }
-}
-
-.footer-area {
-    grid-area: footer;
-    @if $debug { background-color: $footerColor; }
+    @if $debug { background-color: $debugNavArea; }
 }

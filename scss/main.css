@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "logo" "nav";
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 50px 50px;
+      grid-template-rows: 50px 50px;
+}
+
+.container .nav-area {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 1400px;
+    margin: auto;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "left   logo    nav    nav    nav    right";
+    -ms-grid-columns: 50px auto auto auto auto 50px;
+        grid-template-columns: 50px auto auto auto auto 50px;
+    -ms-grid-rows: 50px;
+        grid-template-rows: 50px;
+  }
+}
+
+.left-area {
+  grid-area: left;
+  background-color: lightgrey;
+}
+
+.right-area {
+  grid-area: right;
+  background-color: lightgrey;
+}
+
+.logo-area {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: lightblue;
+}
+
+.logo-area .logo {
+  width: 100%;
+  height: auto;
+}
+
+.nav-area {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: nav;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  grid-auto-flow: column;
+  grid-gap: 20px;
+  font-size: 16px;
+  background-color: darkblue;
+}
+
+.nav-area .nav-item {
+  color: #a9a9a9;
+}
+/*# sourceMappingURL=main.css.map */
