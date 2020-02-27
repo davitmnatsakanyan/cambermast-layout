@@ -41,7 +41,7 @@
         // "left   sub    sub    sub    sub    right"
         // "signup signup signup signup signup signup"
         // "left   footer footer footer footer right";
-    grid-template-columns: 25px auto auto auto auto 25px;
+    grid-template-columns: $leftAreaWidth auto auto auto auto $rightAreaWidth;
     grid-template-rows: 60px auto;
     } // end full-size container
 }

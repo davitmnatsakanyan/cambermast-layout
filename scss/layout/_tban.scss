@@ -1,6 +1,11 @@
 // Styles for the top banner
 
-// layout
+// to test: https://bryanlrobinson.com/blog/how-to-use-css-grid-to-mix-and-match-design-patterns/
+
+
+
+
+// layout - works but z-index ignores the grid
 .top-banner-area
 {
     grid-area: tban;
@@ -12,4 +17,15 @@
 .banner-image {
     max-width: 100%;
     height: auto;
+    display: block;
+}
+
+.banner-overlay {
+    margin-left: $leftAreaWidth;
+    position: absolute;
+    max-width: 100%;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }

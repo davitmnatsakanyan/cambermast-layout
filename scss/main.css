@@ -125,5 +125,16 @@ body {
 .banner-image {
   max-width: 100%;
   height: auto;
+  display: block;
+}
+
+.banner-overlay {
+  margin-left: 25px;
+  position: absolute;
+  max-width: 100%;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */
