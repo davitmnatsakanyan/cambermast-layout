@@ -3,29 +3,19 @@
 // to test: https://bryanlrobinson.com/blog/how-to-use-css-grid-to-mix-and-match-design-patterns/
 
 
-
-
-// layout - works but z-index ignores the grid
-.top-banner-area
-{
-    grid-area: tban;
+.top-banner-area {
     display: grid;
-    align-content: center;
-    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
+    
+.banner-placeholder { grid-area: 1 / 1 / 2 / 2; }
+.banner-overlay { grid-area: 1 / 1 / 2 / 2; }
 
 .banner-image {
     max-width: 100%;
     height: auto;
     display: block;
-}
-
-.banner-overlay {
-    margin-left: $leftAreaWidth;
-    position: absolute;
-    max-width: 100%;
-    z-index: 100;
-    left: 0;
-    right: 0;
-    bottom: 0;
 }
