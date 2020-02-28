@@ -3,3 +3,28 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
 }
+
+// top banner
+.banner-head-1 {
+    font-size: 3vh;
+    letter-spacing: .05em;
+    font-weight: bolder;
+    color: $bannerHead1Color;
+}
+
+.banner-head-2 {
+    font-size: 2vh;
+    color: $bannerHead1Color;
+	margin-top: $bannerHead2MarginTop;
+}
+
+.banner-head-btn {
+    font-size: 2vh;
+    color: $bannerHeadBtnColor;
+    background-color: $bannerHeadBtnBgColor;
+    padding: $bannerHeadBtnPadding;
+    text-align: center;
+
+    &:link { text-decoration: none; }
+    &:visited { text-decoration: none;}
+}
