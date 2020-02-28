@@ -20,18 +20,6 @@
     @if $debug { background-color: $debugNavArea; }
 }
 
-// font
-.nav-area .nav-item {
-        font-size: 12px;
-        color: $navDefaultColor;
-        text-decoration: none;
-        text-transform: uppercase;
-        @include for-size(full-size)
-        {
-            font-size: 16px;
-        }
-}
-
 // hover
 .nav-area .nav-item {
 
