@@ -3,7 +3,7 @@ body {
 }
 
 .banner-head-1 {
-  font-size: 3vh;
+  font-size: 2vh;
   letter-spacing: .05em;
   font-weight: bolder;
   color: white;
@@ -16,7 +16,7 @@ body {
 }
 
 .banner-head-btn {
-  font-size: 2vh;
+  font-size: 1.6vh;
   color: #035B96;
   background-color: white;
   padding: 1% 2%;
