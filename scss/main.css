@@ -112,6 +112,14 @@ body {
 .top-banner-area {
   display: -ms-grid;
   display: grid;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: tban;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr;
@@ -120,7 +128,7 @@ body {
   grid-row-gap: 0px;
 }
 
-.banner-placeholder {
+.top-banner-area .banner-image-div {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
@@ -128,7 +136,15 @@ body {
   grid-area: 1 / 1 / 2 / 2;
 }
 
-.banner-overlay {
+.top-banner-area .banner-overlay-div {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.top-banner-area .banner-text-div {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
@@ -137,8 +153,29 @@ body {
 }
 
 .banner-image {
-  max-width: 100%;
+  min-width: 350px;
   height: auto;
   display: block;
+}
+
+.banner-overlay-div {
+  max-width: 100%;
+}
+
+.banner-text-div {
+  margin-left: 25px;
+  max-width: 100%;
+}
+
+.banner-head-1 {
+  font-size: 3vh;
+}
+
+.banner-head-2 {
+  font-size: 2vh;
+}
+
+.banner-head-btn {
+  font-size: 2vh;
 }
 /*# sourceMappingURL=main.css.map */

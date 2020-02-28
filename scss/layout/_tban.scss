@@ -2,20 +2,51 @@
 
 // to test: https://bryanlrobinson.com/blog/how-to-use-css-grid-to-mix-and-match-design-patterns/
 
-
+// overlapping grids: https://cssgrid-generator.netlify.com/
+// 1x1, then click twice on the cell.
 .top-banner-area {
     display: grid;
+    grid-area: tban;
+    align-content: center;
+    justify-content: center;
+
+    // create a secondary grid.
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-}
-    
-.banner-placeholder { grid-area: 1 / 1 / 2 / 2; }
-.banner-overlay { grid-area: 1 / 1 / 2 / 2; }
 
+    // place items over the banner image.
+    .banner-image-div   { grid-area: 1 / 1 / 2 / 2; }
+    .banner-overlay-div { grid-area: 1 / 1 / 2 / 2; }
+    .banner-text-div    { grid-area: 1 / 1 / 2 / 2; }
+}
+
+// allow the banner image to resize.
 .banner-image {
-    max-width: 100%;
+    min-width: 350px;
     height: auto;
     display: block;
+}
+
+.banner-overlay-div {
+    max-width: 100%;
+    // background: linear-gradient(#e66465, #9198e5);
+}
+
+.banner-text-div {
+    margin-left: $leftAreaWidth;
+    max-width: 100%;
+}
+
+.banner-head-1 {
+    font-size: 3vh;
+}
+
+.banner-head-2 {
+    font-size: 2vh;
+}
+
+.banner-head-btn {
+    font-size: 2vh;
 }
