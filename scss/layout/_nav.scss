@@ -15,6 +15,7 @@
     @include for-size(full-size)
     {
         justify-content: end;
+        margin-right: $gridMarginRight;
     }
     
     @if $debug { background-color: $debugNavArea; }

@@ -5,13 +5,14 @@
     display: grid;
     justify-content: start;
     align-content: center;
+    margin-left: $gridMarginLeft;
 
-    .logo{
-        min-width: 100%;
-        height: auto;
-    }
-    
     @if $debug { background-color: $debugLogoArea; }
+}
+
+.logo{
+    min-width: 100%;
+    height: auto;
 }
 
 @include for-size(full-size) {

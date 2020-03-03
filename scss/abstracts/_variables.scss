@@ -2,7 +2,6 @@
 
 // Use debug:true to add background colors to the grid.
 // Useful for debugging the grid layout.
-$debugLeftArea: lightgrey;
 $debugLogoArea: lightblue;
 $debugNavArea: darkblue;
 $debugTopBannerArea: orange;
@@ -13,7 +12,6 @@ $debugDownloadArea: red;
 $debugSubtitleArea: brown;
 $debugSignupArea: cadetBlue;
 $debugFooterArea: darkslategrey;
-$debugRightArea: lightgrey;
 $debug: false;
 
 // Navigation area
@@ -27,8 +25,8 @@ $navSelectedBorderSize: 3px;
 $navSelectedColor: #035B96;
 
 // Left and right border
-$leftAreaWidth: 25px;
-$rightAreaWidth: 25px;
+$gridMarginLeft: 25px;
+$gridMarginRight: 25px;
 
 // Top banner
 $bannerMarginLeft: 5%;

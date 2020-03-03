@@ -32,17 +32,17 @@
     display: grid;
     max-width: 1366px;
         grid-template-areas:
-        "left logo nav  nav  nav  right"
-        "tban tban tban tban tban tban"
-        "left title title title title right";
+        "logo nav  nav  nav"
+        "tban tban tban tban"
+        "title title title title";
         // "left   svcs   svcs   svcs   svcs   right"
         // "pod    pod    pod    pod    pod    pod"
         // "left   dl     dl     dl     dl     right"
         // "left   sub    sub    sub    sub    right"
         // "signup signup signup signup signup signup"
         // "left   footer footer footer footer right";
-    grid-template-columns: $leftAreaWidth auto auto auto auto $rightAreaWidth;
-    grid-template-rows: 60px auto 60px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 60px auto auto;
     } // end full-size container
 }
 
