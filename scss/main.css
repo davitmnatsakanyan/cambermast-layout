@@ -77,14 +77,6 @@ body {
   }
 }
 
-.left-area {
-  grid-area: left;
-}
-
-.right-area {
-  grid-area: right;
-}
-
 .logo-area {
   -ms-grid-row: 1;
   -ms-grid-column: 1;

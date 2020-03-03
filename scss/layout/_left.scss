@@ -1,7 +1,0 @@
-// layout for the left border
-
-.left-area {
-    grid-area: left;
-
-    @if $debug { background-color: $debugLeftArea; }
-}
