@@ -49,7 +49,7 @@ body {
   min-width: 350px;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "logo" "nav" "tban";
+      grid-template-areas: "logo" "nav" "tban" "title";
   -ms-grid-columns: auto;
       grid-template-columns: auto;
   -ms-grid-rows: 40px 50px auto;
@@ -62,11 +62,11 @@ body {
     display: -ms-grid;
     display: grid;
     max-width: 1366px;
-        grid-template-areas: "left logo nav  nav  nav  right" "tban tban tban tban tban tban";
+        grid-template-areas: "left logo nav  nav  nav  right" "tban tban tban tban tban tban" "left title title title title right";
     -ms-grid-columns: 25px auto auto auto auto 25px;
         grid-template-columns: 25px auto auto auto auto 25px;
-    -ms-grid-rows: 60px auto;
-        grid-template-rows: 60px auto;
+    -ms-grid-rows: 60px auto 60px;
+        grid-template-rows: 60px auto 60px;
   }
 }
 
@@ -202,5 +202,11 @@ body {
 
 .banner-head-btn-div {
   margin-top: 2.5%;
+}
+
+.title-area {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: title;
 }
 /*# sourceMappingURL=main.css.map */

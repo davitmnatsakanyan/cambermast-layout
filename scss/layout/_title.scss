@@ -1,0 +1,7 @@
+// layout for the title area
+
+.title-area {
+    grid-area: title;
+
+    @if $debug { background-color: $debugTitleArea; }
+}
