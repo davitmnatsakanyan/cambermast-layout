@@ -31,12 +31,16 @@ body {
 	margin-top: $bannerHead2MarginTop;
 }
 
-.banner-head-btn {
+// Get started button
+.button-default {
     font-size: 1.2vh;
-    color: $bannerHeadBtnColor;
-    background-color: $bannerHeadBtnBgColor;
-    padding: $bannerHeadBtnPadding;
+    color: $btnDefaultColor;
+    background-color: $btnDefaultBgColor;
+    padding: $btnDefaultPadding;
     text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid $btnDefaultBorderColor;
 
     &:link { text-decoration: none; }
     &:visited { text-decoration: none;}

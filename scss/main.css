@@ -28,19 +28,22 @@ body {
   margin-top: 1%;
 }
 
-.banner-head-btn {
+.button-default {
   font-size: 1.2vh;
   color: #035B96;
   background-color: white;
-  padding: 1% 2%;
+  padding: 0.8% 1%;
   text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #035B96;
 }
 
-.banner-head-btn:link {
+.button-default:link {
   text-decoration: none;
 }
 
-.banner-head-btn:visited {
+.button-default:visited {
   text-decoration: none;
 }
 

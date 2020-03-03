@@ -34,7 +34,10 @@ $bannerMarginTop: 2%;
 $bannerHead1Color: white;
 $bannerHead2Color: white;
 $bannerHead2MarginTop: 1%;
-$bannerHeadBtnColor: $navSelectedColor;
-$bannerHeadBtnBgColor: white;
 $bannerHeadBtnMarginTop: 2.5%;
-$bannerHeadBtnPadding: 1% 2%;
+
+// Default button to use for the website
+$btnDefaultColor: #035B96;
+$btnDefaultBorderColor: #035B96;
+$btnDefaultBgColor: white;
+$btnDefaultPadding: .8% 1%;

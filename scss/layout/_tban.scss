@@ -24,7 +24,7 @@
 
 // allow the banner image to resize.
 .banner-image {
-    min-width: 350px;
+    min-width: 350px; // Do not resize to smaller than this.
     max-width: 100%;
     height: auto;
     display: block;
@@ -45,4 +45,3 @@
 .banner-head-btn-div {
     margin-top: $bannerHeadBtnMarginTop;
 }
-
