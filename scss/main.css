@@ -59,7 +59,7 @@ h1 {
   min-width: 350px;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "logo" "nav" "tban" "title";
+      grid-template-areas: "logo" "nav" "tban" "title" "svcs";
   -ms-grid-columns: auto;
       grid-template-columns: auto;
   -ms-grid-rows: 40px 50px auto;
@@ -72,7 +72,7 @@ h1 {
     display: -ms-grid;
     display: grid;
     max-width: 1366px;
-        grid-template-areas: "logo nav  nav  nav" "tban tban tban tban" "title title title title";
+        grid-template-areas: "logo  nav   nav   nav" "tban  tban  tban  tban" "title title title title" "svcs  svcs  svcs  svcs";
     -ms-grid-columns: auto auto auto auto;
         grid-template-columns: auto auto auto auto;
     -ms-grid-rows: 60px auto auto;

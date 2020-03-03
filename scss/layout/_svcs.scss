@@ -1,0 +1,8 @@
+// layout for services
+
+.title-area {
+    grid-area: svcs;
+    margin-left: $gridMarginLeft;
+    margin-bottom: $gridMarginRight;
+    @if $debug { background-color: $debugTitleArea; }
+}
