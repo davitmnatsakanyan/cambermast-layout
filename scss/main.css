@@ -215,4 +215,54 @@ h1 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+layout for services
+.services-area {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: svcs;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+@media (min-width: 768px) {
+  .services-area {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: svcs;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.services:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.services__item--image {
+  width: 350px;
+  max-width: 100%;
+  height: auto;
+}
 /*# sourceMappingURL=main.css.map */
