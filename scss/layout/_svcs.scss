@@ -1,7 +1,6 @@
-layout for services
-
 // layout for services
 
+// display a stacked grid <767 pixels
 .services-area {
     grid-area: svcs;
     display: grid;
@@ -9,8 +8,9 @@ layout for services
     grid-template-rows: auto;
 
     @if $debug { background-color: $debugServicesArea; }
-}
+} 
 
+// display a 2-column grid >768
 @include for-size(full-size) {
     .services-area {
     grid-area: svcs;
@@ -24,41 +24,14 @@ layout for services
     }
 }
 
-.services {
-    display: flex;
-    flex-wrap: wrap;
-    
-    &:nth-child(even) {
-        flex-direction: row-reverse; // 3
-      }
-
-    &__item {
-        &--image {
-            width: 350px;
-            max-width: 100%;
-            height: auto;
-        }
-    }
+.services-text {
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
+.services-image {
+    max-width: 100%;
+    height: auto;
+}
 
-
-
-// .services-text {
-//     display: grid;
-//     align-items: center;
-//     justify-content: center;
-// }
-
-// .services-image-div {
-//     display: grid;
-//     align-items: center;
-//     justify-content: center;
-// }
-
-// .services-image {
-//     // min-width: 350px; // Do not resize to smaller than this.
-//     width: 350px;
-//     max-width: 100%;
-//     height: auto;
-// }

@@ -216,7 +216,6 @@ h1 {
   margin-bottom: 20px;
 }
 
-layout for services
 .services-area {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
@@ -245,23 +244,18 @@ layout for services
   }
 }
 
-.services {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.services-text {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.services:nth-child(even) {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
-.services__item--image {
-  width: 350px;
+.services-image {
   max-width: 100%;
   height: auto;
 }
