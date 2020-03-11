@@ -38,6 +38,12 @@ p {
   }
 }
 
+.play-podcast {
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
 .banner-head-1 {
   font-size: 2vh;
   letter-spacing: .05em;
@@ -82,7 +88,7 @@ h1 {
   min-width: 350px;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "logo" "nav" "tban" "title" "svcs";
+      grid-template-areas: "logo" "nav" "playpod" "tban" "title" "svcs";
   -ms-grid-columns: auto;
       grid-template-columns: auto;
   -ms-grid-rows: 40px 50px auto;
@@ -95,9 +101,9 @@ h1 {
     display: -ms-grid;
     display: grid;
     max-width: 1366px;
-        grid-template-areas: "logo  nav   nav   nav" "tban  tban  tban  tban" "title title title title" "svcs  svcs  svcs  svcs";
-    -ms-grid-columns: auto auto auto auto;
-        grid-template-columns: auto auto auto auto;
+        grid-template-areas: "logo    nav     nav     nav" "playpod playpod playpod playpod" "tban    tban    tban    tban" "title   title   title   title" "svcs    svcs    svcs    svcs";
+    -ms-grid-columns: auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto;
     -ms-grid-rows: 60px auto auto;
         grid-template-rows: 60px auto auto;
   }
@@ -179,10 +185,55 @@ h1 {
           align-items: flex-end;
 }
 
+.playpod-area {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: playpod;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: #2d5b79;
+  height: 24px;
+}
+
+.btn-play-small {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  border-radius: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 16px;
+}
+
+.btn-play-small:after {
+  border-color: transparent;
+  border-style: solid;
+  border-width: 4px;
+  border-left-color: #2d5b79;
+  border-left-width: 8px;
+  border-right-width: 0;
+  content: '';
+  height: 0;
+  margin-left: 2px;
+  width: 0;
+}
+
 .top-banner-area {
   display: -ms-grid;
   display: grid;
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: tban;
   -ms-flex-line-pack: center;
@@ -246,7 +297,7 @@ h1 {
 }
 
 .title-area {
-  -ms-grid-row: 4;
+  -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: title;
   margin-top: 20px;
@@ -254,7 +305,7 @@ h1 {
 }
 
 .services-area {
-  -ms-grid-row: 5;
+  -ms-grid-row: 6;
   -ms-grid-column: 1;
   grid-area: svcs;
   display: -ms-grid;
@@ -276,7 +327,7 @@ h1 {
 
 @media (min-width: 768px) {
   .services-area {
-    -ms-grid-row: 5;
+    -ms-grid-row: 6;
     -ms-grid-column: 1;
     grid-area: svcs;
     display: -ms-grid;

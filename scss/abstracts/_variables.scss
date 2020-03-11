@@ -7,6 +7,7 @@ $debugNavArea: darkblue;
 $debugTopBannerArea: orange;
 $debugTitleArea: cyan;
 $debugServicesArea: green;
+$debugPlayPodArea: fuchsia;
 $debugPodcastArea: purple;
 $debugDownloadArea: red;
 $debugSubtitleArea: brown;
@@ -31,7 +32,10 @@ $navSelectedColor: #035B96;
 $gridMarginLeft: 25px;
 $gridMarginRight: 25px;
 
-// Top banner
+// Play Podcast area
+$playPodBgColor: rgba(45, 91, 121, 1);
+
+// Top banner image
 $bannerMarginLeft: 5%;
 $bannerMarginTop: 2%;
 $bannerHead1Color: white;
