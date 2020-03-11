@@ -8,7 +8,24 @@
     grid-template-rows: auto;
 
     @if $debug { background-color: $debugServicesArea; }
+  
+    @media only screen and (max-width: 767px) {
+      .service2 {
+        grid-area: 3 / 1 / span 1;
+      }
+      
+    }
+  //   @include for-phone-only {    
+  //     .service2 {
+  //       grid-area: 3 / 1 / span 1;
+  //     }
+  //  }
+  
+
+   
+    
 } 
+
 
 // display a 2-column grid >768
 @include for-size(full-size) {
@@ -17,11 +34,23 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    margin-left: $gridMarginLeft;
-    margin-right: $gridMarginRight;
+    // margin-left: $gridMarginLeft;
+    // margin-right: $gridMarginRight;
 
     @if $debug { background-color: $debugServicesArea; }
     }
+   
+    
+}
+@include for-size(tablet-landscape-up){
+  // body {
+  //   background-color: red;
+  // }
+}
+@include for-size(phone-only){
+  // body {
+  //   background-color: greenyellow;
+  // }
 }
 
 .services-text {
@@ -34,4 +63,179 @@
     max-width: 100%;
     height: auto;
 }
+
+.item1 {
+    grid-area: myArea;
+  }
+  .item4 {
+    grid-area: 3 / 1 / span 1 / span 2;
+  
+  }
+  
+  .grid-container-new {
+    max-width: 1366px;
+    min-width: 350px;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 'myArea myArea';
+    grid-template-columns: 50% 50%;
+    
+     .book_img {
+        width: 45%;
+        
+    }
+    .blue_img {
+        width: 100%;
+    }
+    .item1 {
+      background-image: url(../../images/banners/banner-newsletter.png);
+  }
+ 
+  .item4 {
+    background-image: url(../../images/banners/banner-podcast.png);
+  }
+  }
+  
+  .grid-container-new > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  .input_area {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+      .input_text {
+          
+          h2 {
+              font-size: 28px;
+              font-family: Arial, Helvetica, sans-serif;
+          }
+          p {
+              font-size: 18px;
+              font-family: Arial, Helvetica, sans-serif;
+          }
+      }
+      input {
+          width: 90%;
+          height: 40px;
+          border: 1px solid $debugInputBorder;
+          margin-top: 20px;
+          padding-left: 4%;
+          }
+      .download {
+        width: 94%;
+        padding: 20px 0;
+        margin-top: 30px;
+        background-color: $debugblueBtn; 
+        border: transparent;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 12px;
+         }
+     }
+
+.newsletter_container {
+  padding: 130px 0;
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-areas: 'newsArea newsArea newsArea ';
+  grid-template-columns: 40% 40% 20%;
+  .new_item1 {
+    grid-area: newsArea;
+   
+  }
+  ::placeholder {
+    color: rgba(255,255,255, 0.5);
+    
+  }
+}
+.news_input {
+  height: 50px;
+  border: transparent;
+  width: 90%;
+  padding-left: 10px;
+  background-color: rgba(139,158,178, 0.5);
+  
+}
+.sign_up {
+  width: 88%;
+  padding: 20px 0;
+  background-color: rgba(255,255,255, 0.9);
+  color: $debugblueBtn;
+  border: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  i {
+    margin-left: 10px;
+  }
+}
+.background_styles {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+._title{
+  color: #ffffff;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 0;
+ 
+}
+.small_text {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  margin: 0 0 50px  0;
+  
+}
+.podcast_section {
+  width: 63%;
+  margin: auto;
+  text-align: center;
+  padding: 100px 0;
+}
+.services_section_text {
+  width: 55%;
+  margin: auto;
+  h3 {
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    margin-bottom: 45px;
+  }
+}
+.get_started {
+  width: 180px;
+  padding: 20px 0;
+  border: 1px solid $debugblueBtn;
+  background-color: #ffffff;
+  color: $debugblueBtn;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  .fa {
+    margin-left: 10px;
+
+  }
+
+}
+.item5 {
+  grid-area: 4 / 1 / span 1 / span 2;
+ 
+
+}
+.item6 {
+  grid-area: 5 / 1 /span 1 / span 2;
+ 
+}
+
 

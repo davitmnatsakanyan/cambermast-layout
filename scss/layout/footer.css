@@ -1,0 +1,50 @@
+.footer_section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+}
+
+.footer_section .footer_logo {
+  width: 200px;
+  margin-bottom: 15px;
+}
+
+.footer_section .footer_title {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.footer_section ul {
+  text-align: left;
+}
+
+.footer_section p {
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.footer_section .twitter {
+  margin: 0 15px;
+}
+
+.footer_link {
+  font-size: 20px;
+  color: gray;
+  text-decoration: none;
+}
+
+.logo_section > div {
+  width: 70%;
+  margin: auto;
+  text-align: left;
+}
+
+.logo_section .social_btn {
+  font-size: 24px !important;
+}
+/*# sourceMappingURL=footer.css.map */

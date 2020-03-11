@@ -19,7 +19,9 @@
     }
     
     @if $debug { background-color: $debugNavArea; }
+   
 }
+
 
 // hover
 .nav-area .nav-item {
@@ -36,4 +38,12 @@
         color: $navSelectedColor;
         border-top: $navSelectedBorderSize solid $navSelectedBorderColor;
     }
+}
+.social_btn {
+    color: $debugSocialBtns;
+    font-size: 20px !important;
+}
+.menu_item {
+    display: flex;
+    align-items: flex-end;
 }
