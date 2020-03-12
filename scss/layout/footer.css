@@ -47,4 +47,9 @@
 .logo_section .social_btn {
   font-size: 24px !important;
 }
+
+.copyright {
+  font-size: 18px;
+  color: debugCopyright;
+}
 /*# sourceMappingURL=footer.css.map */

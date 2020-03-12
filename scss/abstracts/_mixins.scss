@@ -4,11 +4,16 @@
 // Mobile content display <=767px, then large-screen >767
 @mixin for-size($size) {
     @if $size == full-size {
-      @media (min-width: 768px) { @content; } 
-    } @else if $size == tablet-landscape-up {
+      @media (max-width: 1800px) { @content; } 
+    } @else if $size == desktop-up {
+      @media (max-width: 1200px) { @content; }
+     }@else if $size == tablet-landscape-up {
       @media (max-width: 900px) { @content; }
-     }@else if $size == phone-only {
+     }@else if $size == tablet-only {
+      @media (max-width: 768px) { @content; }
+    }@else if $size == phone-only {
       @media (max-width: 599px) { @content; }
+      
     }
   }
  

@@ -39,7 +39,13 @@
 .banner-text-div {
     margin-left: $bannerMarginLeft;
     margin-top: $bannerMarginTop;
-    max-width: 100%;
+    width: 30%;
+    @include for-size(desktop-up){
+        width: 45%;
+      }
+    @include for-size(tablet-landscape-up){
+        width: 60%;
+      }
 }
 
 .banner-head-btn-div {

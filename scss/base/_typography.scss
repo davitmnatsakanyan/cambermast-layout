@@ -11,7 +11,7 @@ button {
 input {
     outline: none;
 }
-h4 {
+h1, h2, h3, h4 {
     margin: 0;
 }
 
@@ -32,7 +32,7 @@ p {
     text-transform: uppercase;
     @include for-size(full-size)
     {
-        font-size: 16px;
+        font-size: 15px;
     }
 }
 
@@ -46,24 +46,39 @@ p {
 
 // top banner image (text)
 .banner-head-1 {
-    font-size: 2vh;
+    font-size: 40px;
     letter-spacing: .05em;
     font-weight: bolder;
     color: $bannerHead1Color;
+    @include for-size(desktop-up){
+       font-size: 32px;
+      }
+      @include for-size(tablet-landscape-up){
+        font-size: 28px;
+      }
 }
 
 .banner-head-2 {
-    font-size: 1.6vh;
+    font-size: 18px;
+    line-height: 24px;
     color: $bannerHead1Color;
-	margin-top: $bannerHead2MarginTop;
+    margin-top: $bannerHead2MarginTop;
+    margin-bottom: 40px;
+    @include for-size(desktop-up){
+        font-size: 16px;
+        line-height: 22px;
+       }
+       @include for-size(tablet-landscape-up){
+        font-size: 12px;
+      }
 }
 
 // Get started button
 .button-default {
-    font-size: 1.2vh;
+    font-size: 14px;
+    padding: 14px 30px;
     color: $btnDefaultColor;
     background-color: $btnDefaultBgColor;
-    padding: $btnDefaultPadding;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -71,11 +86,21 @@ p {
 
     &:link { text-decoration: none; }
     &:visited { text-decoration: none;}
+    @include for-size(tablet-landscape-up){
+        font-size: 12px;
+      }
+    .fa {
+        margin-left: 5px;
+    } 
 }
 
 h1 {
     text-align: center;
-    font-size: 2vh;
+    font-size: 28px;
     font-weight: bold;
     text-transform: uppercase;
+    margin: 40px 0;
+    @include for-size(desktop-up){
+        font-size: 24px;
+      }
 }

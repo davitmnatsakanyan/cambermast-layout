@@ -1,52 +1,46 @@
 // layout for services
 
 // display a stacked grid <767 pixels
-.services-area {
-    grid-area: svcs;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+// .services-area {
+//     grid-area: svcs;
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     grid-template-rows: auto;
 
-    @if $debug { background-color: $debugServicesArea; }
+//     @if $debug { background-color: $debugServicesArea; }
   
-    @media only screen and (max-width: 767px) {
-      .service2 {
-        grid-area: 3 / 1 / span 1;
-      }
-      
-    }
-  //   @include for-phone-only {    
-  //     .service2 {
-  //       grid-area: 3 / 1 / span 1;
-  //     }
-  //  }
-  
-
-   
-    
-} 
+//     @media only screen and (max-width: 767px) {
+//       .service2 {
+//         grid-area: 3 / 1 / span 1;
+//       }
+//     }
+//   } 
 
 
 // display a 2-column grid >768
-@include for-size(full-size) {
+
     .services-area {
     grid-area: svcs;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    // margin-left: $gridMarginLeft;
-    // margin-right: $gridMarginRight;
+    @include for-size(tablet-only) {
+      grid-area: svcs;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      .service2 {
+        grid-area: 3 / 1 / span 1;
+      }
 
-    @if $debug { background-color: $debugServicesArea; }
+    
+
+  // @if $debug { background-color: $debugServicesArea; }
     }
    
     
 }
-@include for-size(tablet-landscape-up){
-  // body {
-  //   background-color: red;
-  // }
-}
+
 @include for-size(phone-only){
   // body {
   //   background-color: greenyellow;
@@ -82,6 +76,7 @@
     
      .book_img {
         width: 45%;
+        margin-top: 20px;
         
     }
     .blue_img {
@@ -103,18 +98,29 @@
     font-size: 30px;
   }
   .input_area {
-    width: 50%;
-    margin: auto;
+    width: 60%;
+    margin: 12% auto;
     text-align: left;
+    @include for-size(desktop-up){
+      width: 70%;
+     }
       .input_text {
           
           h2 {
               font-size: 28px;
               font-family: Arial, Helvetica, sans-serif;
+              margin-bottom: 20px;
+              @include for-size(desktop-up){
+                font-size: 22px;
+               }
           }
           p {
               font-size: 18px;
               font-family: Arial, Helvetica, sans-serif;
+              line-height: 24px;
+              @include for-size(desktop-up){
+                font-size:  14px;
+               }
           }
       }
       input {
@@ -126,7 +132,7 @@
           }
       .download {
         width: 94%;
-        padding: 20px 0;
+        padding: 15px 0;
         margin-top: 30px;
         background-color: $debugblueBtn; 
         border: transparent;
@@ -143,6 +149,9 @@
   display: grid;
   grid-template-areas: 'newsArea newsArea newsArea ';
   grid-template-columns: 40% 40% 20%;
+  @include for-size(desktop-up){
+   width: 80%;
+  }
   .new_item1 {
     grid-area: newsArea;
    
@@ -158,16 +167,22 @@
   width: 90%;
   padding-left: 10px;
   background-color: rgba(139,158,178, 0.5);
+  @include for-size(desktop-up){
+    height: 45px;
+  }
   
 }
 .sign_up {
   width: 88%;
-  padding: 20px 0;
+  height: 50px;
   background-color: rgba(255,255,255, 0.9);
   color: $debugblueBtn;
   border: transparent;
   font-size: 14px;
   font-weight: 600;
+  @include for-size(desktop-up){
+    height: 45px;
+  }
   i {
     margin-left: 10px;
   }
@@ -181,17 +196,16 @@
   color: #ffffff;
   font-size: 28px;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 10px 0;
+  margin: 20px 0;
  
 }
 .small_text {
   color: #ffffff;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 25px;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   margin: 0 0 50px  0;
-  
 }
 .podcast_section {
   width: 63%;
@@ -202,40 +216,123 @@
 .services_section_text {
   width: 55%;
   margin: auto;
+
+  @include for-size(desktop-up){
+    width: 75%;
+  }
   h3 {
     font-size: 28px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    @include for-size(desktop-up){
+      font-size: 22px;
+    }
   }
   p {
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 25px;
     margin-bottom: 45px;
+    @include for-size(desktop-up){
+      font-size: 14px;
+      margin-bottom: 20px;
+      line-height: 23px;
+    }
   }
 }
 .get_started {
   width: 180px;
-  padding: 20px 0;
+  padding: 15px 0;
   border: 1px solid $debugblueBtn;
   background-color: #ffffff;
   color: $debugblueBtn;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
+  @include for-size(desktop-up){
+    font-size: 12px;
+    width: 160px;
+    padding: 10px 0;
+  }
   .fa {
     margin-left: 10px;
-
-  }
-
+   }
 }
 .item5 {
   grid-area: 4 / 1 / span 1 / span 2;
- 
-
-}
+  width: 93%;
+  margin: auto;
+  h3 {
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0;
+  }
+ }
 .item6 {
   grid-area: 5 / 1 /span 1 / span 2;
  
 }
+.item7 {
+  grid-area: 6 / 1 /span 1 / span 2;
+}
+
+//slider styles
+.owl-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $debugSlideDot !important;
+  margin: 0 5px;
+ 
+}
+.owl-dot:hover {
+  background-color: #035b96 !important;
+}
+.customer_logo {
+  width: 130px !important;
+
+}
+.owl-stage {
+  display: flex;
+  align-items: center;
+}
+.owl-nav {
+ .owl-prev {
+  ::before {
+    content: "\f178";
+    font-family: FontAwesome;
+    color: $debugSlideDot;
+    font-size: 18px;
+    position: absolute;
+    right: 10%;
+    bottom: 10px;
+  }
+ 
+ }
+ .owl-next {
+  ::before {
+    content: "\f177";
+    font-family: FontAwesome;
+    color: $debugSlideDot;
+    font-size: 18px;
+    position: absolute;
+    right: 12%;
+    bottom: 10px;
+    margin: 0 15px;
+  }
+
+ }
+ 
+}
+span {
+  color: white;
+ }
+span:hover:before {
+ color: #035b96 !important;
+}
+.owl-carousel {
+   margin: 15px;
+}
+
 
 
