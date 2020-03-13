@@ -6,7 +6,7 @@ body {
     margin: 0;
 }
 button {
-    outline: none;
+    outline: none !important;
 }
 input {
     outline: none;
@@ -24,19 +24,9 @@ p {
     margin: 0;
 }
 
-// navigation
-.nav-area .nav-item {
-    font-size: 12px;
-    color: $navDefaultColor;
-    text-decoration: none;
-    text-transform: uppercase;
-    @include for-size(full-size)
-    {
-        font-size: 15px;
-    }
-}
 
 // play podcast text
+
 .play-podcast {
     color: white;
     font-size: 12px;
@@ -55,6 +45,10 @@ p {
       }
       @include for-size(tablet-landscape-up){
         font-size: 28px;
+        line-height: normal;
+      }
+      @include for-size(tablet-only){
+        font-size: 24px;
       }
 }
 
@@ -70,6 +64,9 @@ p {
        }
        @include for-size(tablet-landscape-up){
         font-size: 12px;
+      }
+      @include for-size(phone-only){
+        line-height: normal;
       }
 }
 
@@ -88,6 +85,7 @@ p {
     &:visited { text-decoration: none;}
     @include for-size(tablet-landscape-up){
         font-size: 12px;
+        padding: 11px 30px;
       }
     .fa {
         margin-left: 5px;
@@ -102,5 +100,11 @@ h1 {
     margin: 40px 0;
     @include for-size(desktop-up){
         font-size: 24px;
+        margin: 30px 0;
+      }
+      @include for-size(phone-only){
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 0;
       }
 }

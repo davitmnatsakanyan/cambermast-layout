@@ -25,9 +25,17 @@
 // allow the banner image to resize.
 .banner-image {
     min-width: 350px; // Do not resize to smaller than this.
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
+    @include for-size(tablet-only){
+        height: 275px;
+      }
+      @include for-size(phone-only){
+       min-width: unset;
+      }
+
+   
 }
 
 .banner-overlay-div {
@@ -45,6 +53,12 @@
       }
     @include for-size(tablet-landscape-up){
         width: 60%;
+        margin-left: 5%;
+        margin-top: 4%;
+      }
+      @include for-size(tablet-only){
+        width: 80%;
+       
       }
 }
 

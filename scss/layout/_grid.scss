@@ -1,35 +1,35 @@
 // Layouts for the grids (mobile and large screen)
 
 // Assumes default to a mobile view
-.container {
-    margin: auto;
-    min-width: 350px;
-    display: grid;
-        grid-template-areas:
-        "logo"
-        "nav"
-        "playpod"
-        "tban"
-        "title"
-        "svcs";
-        // "tban   tban   tban   tban   tban   tban"
-        // "left   title  title  title  title  right"
-        // "left   svcs   svcs   svcs   svcs   right"
-        // "pod    pod    pod    pod    pod    pod"
-        // "left   dl     dl     dl     dl     right"
-        // "left   sub    sub    sub    sub    right"
-        // "signup signup signup signup signup signup"
-        // "left   footer footer footer footer right";
-    grid-template-columns:
-        auto;
-    grid-template-rows: 
-        40px 50px auto;
-} // end default container
+// .container {
+//     margin: auto;
+//     min-width: 350px;
+//     display: grid;
+//         grid-template-areas:
+//         "logo"
+//         "nav"
+//         "playpod"
+//         "tban"
+//         "title"
+//         "svcs";
+//         // "tban   tban   tban   tban   tban   tban"
+//         // "left   title  title  title  title  right"
+//         // "left   svcs   svcs   svcs   svcs   right"
+//         // "pod    pod    pod    pod    pod    pod"
+//         // "left   dl     dl     dl     dl     right"
+//         // "left   sub    sub    sub    sub    right"
+//         // "signup signup signup signup signup signup"
+//         // "left   footer footer footer footer right";
+//     grid-template-columns:
+//         auto;
+//     grid-template-rows: 
+//         40px 50px auto;
+// } // end default container
 
 
 // Grid any size larger than the mobile version.
-@include for-size(full-size) {
-.container {
+
+.container1 {
     margin: auto;
     display: grid;
     max-width: 1366px;
@@ -47,7 +47,10 @@
         // "left   footer footer footer footer right";
     grid-template-columns: auto auto auto auto auto;
     grid-template-rows: 60px auto auto;
-    } // end full-size container
-}
+    @include for-size(phone-only) {
+        display: unset;
+     }
+    } 
+
 
 
