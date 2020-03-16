@@ -104,7 +104,7 @@ h1 {
         margin: 30px 0 !important;
       }
       @include for-size(phone-only){
-        font-size: 20px !important;
+        font-size: 18px !important;
         margin-top: 20px !important;
         margin-bottom: 0 !important;
       }
@@ -136,7 +136,7 @@ h2 {
     font-size: 28px !important;
     margin: 20px 0 !important;
     @include for-size(phone-only){
-      font-size: 24px !important;
+      font-size: 22px !important;
     }
 }
 
@@ -145,7 +145,7 @@ h3 {
   font-size: 28px !important;
     margin: 20px 0 !important;
     @include for-size(phone-only){
-      font-size: 24px !important;
+      font-size: 22px !important;
     }
 }
 p {
@@ -171,6 +171,9 @@ p {
 
 ::placeholder {
   font-size: 16px;
+  @include for-size(phone-only){
+    font-size: 14px;
+  }
 }
 
 // General styles for all background images
@@ -179,5 +182,52 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.post_text_style {
+  font-size: 16px;
+  color: $debugPostText;
+  margin-bottom: 20px;
+
+  @include for-size(desktop-up){
+    font-size: 14px;
+  }
+  @include for-size(tablet-landscape-up){
+    font-size: 12px;
+}
+  @include for-size(phone-only){
+    margin-top: 12px;
+    font-size: 14px;
+  }
+}
+//all h5 styles 
+h5 {
+  font-size: 22px !important;
+  margin: 20px 0 !important;
+  @include for-size(desktop-up){
+    font-size: 20px !important;
+  }
+  @include for-size(tablet-landscape-up){
+    font-size: 14px !important;
+}
+@include for-size(phone-only){
+  font-size: 16px !important;
+}
+ 
+  
+
+}
+h6 {
+  font-size: 20px !important;
+  margin: 0 0 15px 0 !important;
+  @include for-size(desktop-up){
+    font-size: 16px !important;
+}
+@include for-size(tablet-only){
+  font-size: 14px !important;
+  padding-top: 10px;
+}
+@include for-size(phone-only){
+  font-size: 16px !important;
+}
 }
 

@@ -1,0 +1,20 @@
+.event_feed {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 4 / 1 / span 1 / span 2;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'myArea myArea myArea';
+  -ms-grid-columns: 33.3% 33.3% 33.3%;
+      grid-template-columns: 33.3% 33.3% 33.3%;
+  text-align: left;
+  width: 90%;
+  margin: auto;
+}
+
+.event_section_content {
+  text-align: left;
+}
+/*# sourceMappingURL=events.css.map */
