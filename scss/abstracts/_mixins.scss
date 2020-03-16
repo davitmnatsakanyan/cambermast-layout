@@ -4,9 +4,19 @@
 // Mobile content display <=767px, then large-screen >767
 @mixin for-size($size) {
     @if $size == full-size {
-      @media (min-width: 768px) { @content; } 
+      @media (min-width: 1800px) { @content; } 
+    } @else if $size == desktop-up {
+      @media (max-width: 1200px) { @content; }
+     }@else if $size == tablet-landscape-up {
+      @media (max-width: 900px) { @content; }
+     }@else if $size == tablet-only {
+      @media (max-width: 768px) { @content; }
+    }@else if $size == phone-only {
+      @media (max-width: 599px) { @content; }
+      
     }
   }
+ 
 
 //   Reference: https://medium.com/@timothyrobards/structuring-your-sass-projects-c8d41fa55ed4
 //   If you want to take it a step further you could use conditionals to setup your mixins. 

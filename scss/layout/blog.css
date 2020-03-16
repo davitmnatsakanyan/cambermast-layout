@@ -1,0 +1,8 @@
+.blog-text-div {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+}
+/*# sourceMappingURL=blog.css.map */

@@ -1,0 +1,70 @@
+// Customer section
+
+//customer section grid 
+.customers_section {
+    grid-area: 4 / 1 / span 1 / span 2;
+    width: 93%;
+    margin: auto;
+    
+   }
+
+   //Slider styles
+   
+.owl-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $debugSlideDot !important;
+    margin: 0 5px;
+   }
+  .owl-dot:hover {
+    background-color: #035b96 !important;
+  }
+  .customer_logo {
+    width: 130px !important;
+    @include for-size(phone-only){
+      width: 100px !important;
+    }
+  
+  }
+  .owl-stage {
+    display: flex;
+    align-items: center;
+  }
+  .owl-nav {
+   .owl-prev {
+    ::before {
+      content: "\f178";
+      font-family: FontAwesome;
+      color: $debugSlideDot;
+      font-size: 18px;
+      position: absolute;
+      right: 10%;
+      bottom: 10px;
+    }
+   
+   }
+   .owl-next {
+    ::before {
+      content: "\f177";
+      font-family: FontAwesome;
+      color: $debugSlideDot;
+      font-size: 18px;
+      position: absolute;
+      right: 12%;
+      bottom: 10px;
+      margin: 0 15px;
+    }
+  
+   }
+   
+  }
+  span {
+    color: white;
+   }
+  span:hover:before {
+   color: #035b96 !important;
+  }
+  .owl-carousel {
+     margin: 15px;
+  }

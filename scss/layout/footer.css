@@ -1,0 +1,139 @@
+.footer_section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer_section {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.footer_section .footer_logo {
+  width: 160px;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 900px) {
+  .footer_section .footer_logo {
+    width: 140px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer_section .footer_logo {
+    width: 100px;
+  }
+}
+
+.footer_section .footer_title {
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer_section .footer_title {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer_section .footer_title {
+    font-size: 13px;
+  }
+}
+
+.footer_section p {
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: gray;
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer_section p {
+    font-size: 12px;
+  }
+}
+
+.footer_section .twitter {
+  margin: 0 15px;
+}
+
+.footer_section ul {
+  text-align: left;
+  line-height: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer_section ul {
+    padding-bottom: 25px;
+  }
+}
+
+.footer_link {
+  font-size: 16px;
+  color: gray;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer_link {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer_link {
+    font-size: 11px;
+  }
+}
+
+.logo_section > div {
+  width: 70%;
+  margin: auto;
+  text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo_section > div {
+    width: unset;
+  }
+}
+
+.logo_section .social_btn {
+  font-size: 23px !important;
+}
+
+@media only screen and (max-width: 500px) {
+  .logo_section .social_btn {
+    font-size: 20px !important;
+  }
+}
+
+.copyright {
+  font-size: 14px;
+  color: #c3c3c3;
+  margin: 50px 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .copyright {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .copyright {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+}
+/*# sourceMappingURL=footer.css.map */
