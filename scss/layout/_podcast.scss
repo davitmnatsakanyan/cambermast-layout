@@ -1,0 +1,62 @@
+// Podcast section
+
+
+//podcast grid area
+.podcast_container{
+    grid-area: 2 / 1 / span 1 / span 2;
+    grid-template-columns: 40% 60%;
+    width: 67%;
+    margin: auto;
+    @include for-size(desktop-up){
+        width: 95%;
+      }
+   }
+
+// view more button grid area
+   .view_more_section {
+    grid-area: 3 / 1 / span 1 / span 2;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.listen_podcast {
+    grid-area: myArea myArea;
+    grid-area: 2 / 1 / span 1 / span 2;
+  }
+  
+  .podcast_content {
+    display: grid;
+    grid-template-areas: 'myArea';
+   
+  }
+  .podcast_section_text {
+      text-align: left;
+      padding-left: 50px;
+      display: flex;
+      align-items: center;
+      width: 90%;
+      margin-left: auto;
+  }
+  .podcast_logo {
+    width: 38px;
+    margin: 30px 30px 0 0;
+  }
+  .spotify_logo {
+    width: 135px;
+    margin: 30px 30px 0 0;
+  }
+  .soundcloud_logo {
+    width: 70px;
+    margin: 30px 30px 0 0;
+  }
+  .photo_arae {
+    box-shadow: 1px 1px 13px 9px #eee9e9;
+  }
+  code {
+    color: red;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+  }
+
+  
