@@ -27,7 +27,7 @@ p {
 
 // play podcast text
 
-.play-podcast {
+.play_podcast {
     color: white;
     font-size: 12px;
     text-transform: uppercase;
@@ -35,7 +35,7 @@ p {
 
 
 // top banner image (text)
-.banner-head-1 {
+.banner_head_1 {
     font-size: 40px;
     letter-spacing: .05em;
     font-weight: bolder;
@@ -52,7 +52,7 @@ p {
       }
 }
 
-.banner-head-2 {
+.banner_head_2 {
     font-size: 18px;
     line-height: 24px;
     color: $bannerHead1Color;
@@ -71,7 +71,7 @@ p {
 }
 
 // Get started button
-.button-default {
+.button_default {
     font-size: 14px;
     padding: 14px 30px;
     color: $btnDefaultColor;
@@ -87,10 +87,8 @@ p {
         font-size: 12px;
         padding: 11px 30px;
       }
-    .fa {
-        margin-left: 5px;
-    } 
-}
+   }
+   
 // all h1 styles of page
 
 h1 {

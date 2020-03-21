@@ -82,14 +82,4 @@
     @include for-size(tablet-landscape-up){
         font-size: 12px;
     }
-   
-
-    .fa {
-        font-size: 15px;
-        margin-left: 10px;
-        @include for-size(tablet-landscape-up){
-            font-size: 12px;
-        }
-    }
-
-}
+  }
