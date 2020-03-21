@@ -32,12 +32,12 @@
         min-width: 350px;
         margin: auto;
         display: grid;
-        grid-template-areas: 'myArea myArea';
+        grid-template-areas: 'mainArea mainArea';
         grid-template-columns: 50% 50%;
         margin-top: 25px;
 
         @include for-size(tablet-only) {
-          grid-template-areas: 'myArea';
+          grid-template-areas: 'mainArea';
           max-width: unset;
           min-width: unset;
           display: unset;
@@ -45,7 +45,7 @@
      }
 
       .newsletter_section {
-       grid-area: myArea;
+       grid-area: mainArea;
       }
 
      

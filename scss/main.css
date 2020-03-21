@@ -334,7 +334,7 @@ h6 {
   margin: auto;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'myArea myArea';
+      grid-template-areas: 'mainArea mainArea';
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
   margin-top: 25px;
@@ -342,7 +342,7 @@ h6 {
 
 @media (max-width: 768px) {
   .main_container {
-        grid-template-areas: 'myArea';
+        grid-template-areas: 'mainArea';
     max-width: unset;
     min-width: unset;
     display: unset;
@@ -353,7 +353,7 @@ h6 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  grid-area: myArea;
+  grid-area: mainArea;
 }
 
 .logo_area {
@@ -1369,7 +1369,7 @@ span:hover:before {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  grid-area: myArea;
+  grid-area: mainArea;
 }
 
 .event_feed {
@@ -1409,7 +1409,7 @@ span:hover:before {
   grid-area: 6 / 1 / span 1 / span 2;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'myArea myArea';
+      grid-template-areas: 'mainArea mainArea';
 }
 
 @media (max-width: 768px) {
@@ -1437,7 +1437,7 @@ span:hover:before {
 .posts_area {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'mypost mypost mypost';
+      grid-template-areas: 'mainArea mainArea mainArea';
   -ms-grid-columns: 40% 40% 20%;
       grid-template-columns: 40% 40% 20%;
   width: 70%;
@@ -1476,8 +1476,8 @@ span:hover:before {
 .important_posts_text {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: mypost;
+  -ms-grid-column-span: 2;
+  grid-area: mainArea;
 }
 
 .signup_newsletter_input {
@@ -1505,7 +1505,7 @@ span:hover:before {
 .posts_container {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'myArea myArea  myArea';
+      grid-template-areas: 'mainArea mainArea  mainArea';
   -ms-grid-columns: 33.3% 33.3% 33.3%;
       grid-template-columns: 33.3% 33.3% 33.3%;
   text-align: left;
@@ -1513,7 +1513,7 @@ span:hover:before {
 
 @media (max-width: 599px) {
   .posts_container {
-        grid-template-areas: 'myArea';
+        grid-template-areas: 'mainArea';
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
   }
@@ -1604,7 +1604,7 @@ span:hover:before {
   grid-area: 5/ 1 / span 1 / span 2;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'myArea myArea myArea';
+      grid-template-areas: 'mainArea mainArea mainArea';
   -ms-grid-columns: 33.3% 33.3% 33.3%;
       grid-template-columns: 33.3% 33.3% 33.3%;
   width: 90%;
@@ -1689,7 +1689,7 @@ span:hover:before {
 }
 
 .listen_podcast {
-  grid-area: myArea myArea;
+  grid-area: mainArea mainArea;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
@@ -1700,7 +1700,7 @@ span:hover:before {
 .podcast_content {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'myArea';
+      grid-template-areas: 'mainArea';
 }
 
 @media (max-width: 900px) {
@@ -1777,7 +1777,7 @@ code {
 .offering_services {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'myArea myArea myArea';
+      grid-template-areas: 'mainArea mainArea mainArea';
   -ms-grid-columns: 33.3% 33.3% 33.3%;
       grid-template-columns: 33.3% 33.3% 33.3%;
   margin: 70px 0;
@@ -1785,7 +1785,7 @@ code {
 
 @media (max-width: 768px) {
   .offering_services {
-        grid-template-areas: 'myArea';
+        grid-template-areas: 'mainArea';
     -ms-grid-columns: 90%;
         grid-template-columns: 90%;
     -webkit-box-pack: center;
@@ -1799,7 +1799,7 @@ code {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  grid-area: myArea;
+  grid-area: mainArea;
 }
 
 .service_types {
@@ -1918,7 +1918,7 @@ code {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  grid-area: myArea;
+  grid-area: mainArea;
 }
 
 .testimonials_customer_slider {
@@ -1928,7 +1928,7 @@ code {
 .testimonials_slider_item {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'myArea myArea';
+      grid-template-areas: 'mainArea mainArea';
   text-align: left;
   height: auto;
   width: 400px;
@@ -1942,7 +1942,7 @@ code {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  grid-area: myArea;
+  grid-area: mainArea;
   grid-area: 1 / 1 / span 5 / span 2;
   width: 70px;
   height: 70px;
@@ -1975,7 +1975,7 @@ code {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  grid-area: myArea;
+  grid-area: mainArea;
   grid-area: 3 / 3 / span 3 / span 1;
 }
 

@@ -22,13 +22,13 @@
 }
 
 .listen_podcast {
-    grid-area: myArea myArea;
+    grid-area: mainArea mainArea;
     grid-area: 2 / 1 / span 1 / span 2;
   }
   
   .podcast_content {
     display: grid;
-    grid-template-areas: 'myArea';
+    grid-template-areas: 'mainArea';
     @include for-size(tablet-landscape-up){
      display: unset;
      }

@@ -23,7 +23,7 @@ a:active {
  }
 
  .posts_area {
-    grid-area: myArea  ;
+    grid-area: mainArea  ;
   }
  
  // event food grid area in blog section
@@ -47,7 +47,7 @@ a:active {
   .event_pocket_guide_section {
     grid-area: 6 / 1 / span 1 / span 2;
     display: grid;
-    grid-template-areas: 'myArea myArea';
+    grid-template-areas: 'mainArea mainArea';
     @include for-size(tablet-only){
         display: unset;
         }

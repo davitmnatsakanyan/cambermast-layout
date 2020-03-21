@@ -3,11 +3,11 @@
 // internal services section grid
 .offering_services {
     display: grid;
-    grid-template-areas: 'myArea myArea myArea';
+    grid-template-areas: 'mainArea mainArea mainArea';
     grid-template-columns: 33.3% 33.3% 33.3%;
     margin: 70px 0;
     @include for-size(tablet-only){
-      grid-template-areas: 'myArea';
+      grid-template-areas: 'mainArea';
       grid-template-columns: 90%;
       justify-content: center;
       margin: 20px 0;
@@ -15,7 +15,7 @@
   }
   
   .internal_services_section {
-    grid-area: myArea;
+    grid-area: mainArea;
    
   }
   
@@ -80,7 +80,7 @@
     }
   }
   // contact us button style
-  
+
   .contact_us_btn {
     min-width: 22%;
     padding: 16.5px 20px;

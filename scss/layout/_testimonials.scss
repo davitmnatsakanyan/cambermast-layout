@@ -2,7 +2,7 @@
 
 
 .testimonials_section {
-    grid-area: myArea;
+    grid-area: mainArea;
    
   }
   .testimonials_customer_slider {
@@ -11,7 +11,7 @@
   // testimonials second slider styles
   .testimonials_slider_item {
     display: grid;
-    grid-template-areas: 'myArea myArea';
+    grid-template-areas: 'mainArea mainArea';
     text-align: left;
     height: auto;
     width: 400px;
@@ -24,7 +24,7 @@
   }
 
   .slider_img {
-    grid-area: myArea;
+    grid-area: mainArea;
     grid-area: 1 / 1 / span 5 / span 2;
     width: 70px;
     height: 70px;
@@ -45,7 +45,7 @@
     font-size: 20px;
   }
   .feedback_text {
-    grid-area: myArea;
+    grid-area: mainArea;
     grid-area: 3 / 3 / span 3 / span 1;
   
   }
