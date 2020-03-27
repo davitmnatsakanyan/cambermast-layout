@@ -41,31 +41,38 @@
   .owl-nav {
    .owl-prev {
     ::before {
-      content: "\f178";
+      content: url(../../images/home/left_arrow.png);
       font-family: FontAwesome;
-      color: $debugSlideDot;
+      color: #d4d4d4;
       font-size: 18px;
       position: absolute;
-      right: 10%;
-      bottom: 10px;
+      right: 17%;
+      bottom: 5px;
+      @include for-size(tablet-landscape-up){
+        right: 20%;
+    }
+    @include for-size(phone-only){
+      right: 15%;
+  }
     }
    
    }
    .owl-next {
     ::before {
-      content: "\f177";
-      font-family: FontAwesome;
-      color: $debugSlideDot;
-      font-size: 18px;
+      content: url(../../images/home/left_arrow.png);
       position: absolute;
       right: 12%;
       bottom: 10px;
       margin: 0 15px;
+      transform: rotate(180deg); 
+      @include for-size(phone-only){
+        right: 0;
     }
+    
+ }
   
    }
-   
-  }
+ }
   span {
     color: white;
    }

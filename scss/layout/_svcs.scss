@@ -55,7 +55,8 @@
   }
   @include for-size(tablet-only){
     width: 90%;
-    padding: 30px 0;
+   padding-top: 0;
+   padding-bottom: 20px;
   }
  
 }
@@ -78,7 +79,6 @@
 
 .title_area {
   @include for-size(desktop-up){
-   margin-top: 10px;
    margin-bottom: 0;
    }
   
