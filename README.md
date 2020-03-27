@@ -38,7 +38,7 @@ The scss folder uses the 7-1 method, but not all seven :-). See following folder
 - Right now, the site is mobile when <768 pixels (defult) and "full screen" when >= 768 pixels.
 
 ## TODO
-Go to the index.html page and scroll to the bottom. Currently working on the "services-area".
+Go to the index.html page and scroll to the bottom. Currently working on the "services_area".
 
 Look further down index.html and you will see the commented areas still to be designed.
 

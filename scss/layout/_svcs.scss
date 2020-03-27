@@ -3,7 +3,7 @@
 
 // display a 2-column grid
 
-    .services-area {
+    .services_area {
     grid-area: svcs;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -13,7 +13,9 @@
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: auto;
-      .service2 {
+
+      // this class is defined for solving the problem in  services section for mobile version  
+      .second_services_section{
         grid-area: 3 / 1 / span 1;
       }
 
@@ -22,7 +24,7 @@
   }
 
 // services img 
-.services-image {
+.services_image {
     width: 100%;
     height: auto;
 }
@@ -36,7 +38,7 @@
      }
   }
  // services text styles
-.services-text {
+.services_text {
   display: grid;
   align-items: center;
   justify-content: center;
@@ -53,7 +55,8 @@
   }
   @include for-size(tablet-only){
     width: 90%;
-    padding: 30px 0;
+   padding-top: 0;
+   padding-bottom: 20px;
   }
  
 }
@@ -72,15 +75,10 @@
     width: 160px;
     padding: 10px 0;
   }
-  // icon in get started button
-  .fa {
-    margin-left: 10px;
-   }
 }
 
-.title-area {
+.title_area {
   @include for-size(desktop-up){
-   margin-top: 10px;
    margin-bottom: 0;
    }
   

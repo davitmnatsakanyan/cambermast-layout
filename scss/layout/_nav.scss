@@ -1,7 +1,7 @@
 // Layout for the navigation bar.
 
 // layout
-.nav-area {
+.nav_section {
     grid-area: nav;
     display: grid;
     align-content: center;
@@ -27,7 +27,7 @@
 
 
 // hover
-.nav-area .nav-item {
+.nav_section .nav-item {
 
     &:hover{
         color: $navHoverColor;
@@ -36,7 +36,7 @@
 }
 
 // selected
-.nav-area .nav-item {
+.nav_section .nav-item {
     font-size: 16px;
     color: $navDefaultColor;
     text-decoration: none;
@@ -70,6 +70,17 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    a {
+        display: flex;
+        align-items: center;
+        height: 50px;
+    }
+    img {
+        width: 20px;
+        @include for-size(tablet-landscape-up){
+           width: 16px;;
+         }
+    }
 }
 
 

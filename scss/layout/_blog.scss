@@ -10,10 +10,7 @@
     margin-top: 10px;
 
  // blog section icon  
-.fa {
-    color: #bebdb5 !important; 
-    margin: 0 7px;
-}
+
 // links in blog section 
 a {
     color: #ffffff !important;
@@ -26,20 +23,35 @@ a:active {
  }
 
  .posts_area {
-    grid-area: myArea  ;
+    grid-area: mainArea  ;
   }
  
- 
- 
-.event_feed{
-    grid-area: 4 / 1 / span 1 / span 2;
+ // event food grid area in blog section
+ .event_feed{
+    grid-area: 5 / 1 / span 1 / span 2;
    }
+  
   .post_newsletter_section{
-   grid-area: 6 / 1 / span 1 / span 2;
-  }
-  .post_footer_section{
    grid-area: 7 / 1 / span 1 / span 2;
   }
+  .post_footer_section{
+   grid-area: 8 / 1 / span 1 / span 2
+  }
+
+  .blog_home {
+    span {
+        font-size: 13px;
+        color: $debugPostText;
+    }
+  }
+  .event_pocket_guide_section {
+    grid-area: 6 / 1 / span 1 / span 2;
+    display: grid;
+    grid-template-areas: 'mainArea mainArea';
+    @include for-size(tablet-only){
+        display: unset;
+        }
+}
  
   
   

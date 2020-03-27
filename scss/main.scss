@@ -1,7 +1,7 @@
 // All styles, media queries, and mixins for the site.
 // Generally follows the 7-1 methodology:
 // https://itnext.io/structuring-your-sass-projects-c8d41fa55ed4
-
+@import '../plugins/bootstrap/scss/bootstrap.scss';
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 @import 'abstracts/functions';
@@ -22,6 +22,11 @@
 @import 'layout/posts';
 @import 'layout/pagination';
 @import 'layout/events';
+@import 'layout/podcast';
+@import 'layout/services';
+@import 'layout/testimonials';
+
+
 
 
 

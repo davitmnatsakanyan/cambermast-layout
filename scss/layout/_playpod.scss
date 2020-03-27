@@ -1,6 +1,6 @@
 // Layout for the logo area
 
-.playpod-area {
+.playpod_area {
     grid-area: playpod;
     display: grid;
     justify-content: center;
@@ -10,7 +10,7 @@
     @if $debug { background-color: $debugPlayPodArea; }
 }
 
-.btn-play-small {
+.btn_play_small {
     align-items: center;
     background: white;
     border-radius: 100%;
@@ -33,7 +33,12 @@
       width: 0;
     }
   }
-  .play-podcast:hover {
+  .play_podcast:hover {
     color: #ffffff !important;
 
+  }
+  .play_podcast {
+    span {
+      margin-right: 10px;
+    }
   }

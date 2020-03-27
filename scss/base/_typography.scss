@@ -27,7 +27,7 @@ p {
 
 // play podcast text
 
-.play-podcast {
+.play_podcast {
     color: white;
     font-size: 12px;
     text-transform: uppercase;
@@ -35,7 +35,7 @@ p {
 
 
 // top banner image (text)
-.banner-head-1 {
+.banner_head_1 {
     font-size: 40px;
     letter-spacing: .05em;
     font-weight: bolder;
@@ -52,7 +52,7 @@ p {
       }
 }
 
-.banner-head-2 {
+.banner_short_text {
     font-size: 18px;
     line-height: 24px;
     color: $bannerHead1Color;
@@ -71,7 +71,7 @@ p {
 }
 
 // Get started button
-.button-default {
+.button_default {
     font-size: 14px;
     padding: 14px 30px;
     color: $btnDefaultColor;
@@ -87,36 +87,40 @@ p {
         font-size: 12px;
         padding: 11px 30px;
       }
-    .fa {
-        margin-left: 5px;
-    } 
-}
+   }
+   
 // all h1 styles of page
 
 h1 {
     text-align: center;
-    font-size: 28px !important;
-    font-weight: bold !important;
+    font-size: 28px ;
+    font-weight: bold ;
     text-transform: uppercase;
-    margin: 40px 0 !important;
+    margin: 40px 0 ;
     @include for-size(desktop-up){
-        font-size: 24px !important;
-        margin: 30px 0 !important;
+        font-size: 24px;
+        margin: 30px 0 ;
+      }
+      @include for-size(tablet-only){
+       margin-bottom: 0;
       }
       @include for-size(phone-only){
-        font-size: 18px !important;
-        margin-top: 20px !important;
-        margin-bottom: 0 !important;
+        font-size: 22px;
+        margin-top: 20px;
+        margin-bottom: 0;
       }
 }
 
 //services section texts styles
 .services_section_text {
   h3 {
-    font-size: 28px  !important;
-     margin-bottom: 20px  !important;
+    font-size: 28px;
+     margin-bottom: 20px;
     @include for-size(desktop-up){
-      font-size: 22px  !important;
+      font-size: 24px;
+    }
+    @include for-size(phone-only){
+      font-size: 22px;
     }
   }
   p {
@@ -132,25 +136,26 @@ h1 {
 }
 //all h2 styles of page
 h2 {
-    color: #ffffff !important;
-    font-size: 28px !important;
-    margin: 20px 0 !important;
+    color: #ffffff;
+    font-size: 28px;
+    margin: 20px 0 ;
     @include for-size(phone-only){
-      font-size: 22px !important;
+      font-size: 22px ;
     }
 }
 
 // all h3 styles of page
 h3 {
-  font-size: 28px !important;
-    margin: 20px 0 !important;
+  font-size: 28px;
+    margin: 20px 0 ;
     @include for-size(phone-only){
-      font-size: 22px !important;
+      font-size: 24px ;
+      padding: 0 5px;
     }
 }
 p {
   @include for-size(phone-only){
-    line-height: normal !important;
+    line-height: normal ;
   }
 }
 
@@ -201,20 +206,19 @@ p {
 }
 //all h5 styles 
 h5 {
-  font-size: 22px !important;
-  margin: 20px 0 !important;
+  font-size: 22px ;
+  margin: 20px 0 ;
   @include for-size(desktop-up){
-    font-size: 20px !important;
+    font-size: 20px ;
   }
   @include for-size(tablet-landscape-up){
-    font-size: 14px !important;
+    font-size: 14px;
 }
 @include for-size(phone-only){
-  font-size: 16px !important;
+  font-size: 16px;
 }
  
   
-
 }
 h6 {
   font-size: 20px !important;
