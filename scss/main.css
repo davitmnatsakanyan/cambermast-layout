@@ -11094,7 +11094,7 @@ h6 {
   display: -ms-grid;
   display: grid;
   max-width: 1366px;
-      grid-template-areas: "logo    nav     nav     nav" "playpod playpod playpod playpod" "tban    tban    tban    tban" "title   title   title   title" "svcs    svcs    svcs    svcs";
+      grid-template-areas: "logo    nav     nav     nav" "playpod playpod playpod playpod" "tban    tban    tban    tban" "title   title   title   title" "svcs    svcs    svcs    svcs";
   -ms-grid-columns: auto auto auto auto auto;
       grid-template-columns: auto auto auto auto auto;
   -ms-grid-rows: 60px auto auto;
@@ -11448,18 +11448,6 @@ h6 {
   width: 100%;
   height: auto;
   display: block;
-}
-
-@media (max-width: 768px) {
-  .banner_image {
-    height: 275px;
-  }
-}
-
-@media (max-width: 599px) {
-  .banner_image {
-    min-width: unset;
-  }
 }
 
 .banner_overlay_div {

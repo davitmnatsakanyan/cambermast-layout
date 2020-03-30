@@ -19,7 +19,7 @@
     // place items over the banner image.
     .banner_image_div   { grid-area: 1 / 1 / 2 / 2; } // image
     .banner_overlay_div { grid-area: 1 / 1 / 2 / 2; } // gradient or other overlay
-    .banner_text_div    { grid-area: 1 / 1 / 2 / 2; } // text, buttons, call to action
+    .banner_text_div    { grid-area: 1 / 1 / 2 / 2; } // overlay objects like text, buttons, etc.
 }
 
 // allow the banner image to resize.
@@ -28,14 +28,6 @@
     width: 100%;
     height: auto;
     display: block;
-    @include for-size(tablet-only){
-        height: 275px;
-      }
-      @include for-size(phone-only){
-       min-width: unset;
-      }
-
-   
 }
 
 .banner_overlay_div {
