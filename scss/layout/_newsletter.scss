@@ -6,15 +6,17 @@
       background-image: url(../../images/banners/banner-newsletter.png);
       margin-top: 25px;
   }
+ 
  // grid area of newsletter content
  
  .newsletter_container {
     padding: 130px 0;
     width: 70%;
     margin: auto;
-    display: grid;
-    grid-template-areas: 'newsArea newsArea newsArea ';
-    grid-template-columns: 40% 40% 20%;
+    
+    // display: grid;
+    // grid-template-areas: 'newsArea newsArea newsArea ';
+    // grid-template-columns: 40% 40% 20%;
     
     @include for-size(desktop-up){
      width: 88%;
@@ -43,7 +45,7 @@
 .news_input {
     height: 50px;
     border: transparent;
-    width: 90%;
+    width: 100%;
     padding-left: 10px;
     background-color: rgba(139,158,178, 0.5);
     @include for-size(desktop-up){
@@ -57,7 +59,7 @@
   }
   // newsletter section sign up button styles 
   .sign_up {
-    width: 88%;
+    width: 170px;
     height: 50px;
     background-color: rgba(255,255,255, 0.9);
     color: $debugblueBtn;
@@ -75,3 +77,37 @@
       margin-left: 10px;
     }
   }
+  form {
+    display:  flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    .newsletter_input_grid1, .newsletter_input_grid2 {
+      width: 40%;
+      margin-right: 20px;
+      @media only screen and (max-width: 1359) {
+        width: 250px;
+       
+      }
+     
+    
+    @media only screen and (max-width: 767px) {
+         width: 100%;
+         margin-bottom: 20px;
+         
+      }
+      @media only screen and (max-width: 575px) {
+        margin-bottom: 0;
+        
+     }
+    
+   
+  }
+  @media only screen and (max-width: 767px) {
+   flex-direction: column;
+  
+ }
+ 
+
+
+}
